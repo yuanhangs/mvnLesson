@@ -1,0 +1,18 @@
+ JSP+JAVABean+MYSQL
+具体步骤：
+  1、导入sql语句到MySQL
+  2、创建mvn工程,添加相应的包
+  3、后端代码
+     (1) 实体类 Cards
+     (2) 公共类 BaseDao
+     (3) 业务类 CardsServer
+  4、前端,复制代码 HTML
+     （1）表单,有没有action,method="post"
+       <form method="post" action="doZhuce.jsp" >
+     （2）找到每一个文本框的名称:name="card"
+       <input  type="text" name="card"/>
+     （3）找到有没有提交按钮
+      <input id="zx" type="submit" name="xyb" value="下一步"  />
+  5、处理使用JSP
+
+

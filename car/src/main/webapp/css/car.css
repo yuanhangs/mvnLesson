@@ -1,0 +1,60 @@
+.tr1{
+    font-weight: bold;
+}
+.dv{
+    width: 800px;
+    height: auto;
+    margin: 0px auto;
+    border:2px solid royalblue;
+}
+
+.dv table{
+    width:600px;
+    margin-left: 90px;
+    /*表格的实线*/
+    border-collapse: collapse;
+    margin-bottom:50px;
+    text-align: center;
+
+}
+
+tr,th,td{
+    line-height: 35px;
+}
+
+#btn{
+    border:none;
+    width: 50px;
+    height: 30px;
+    background: url("image/car.png") no-repeat;
+}
+
+.dv table input{
+    margin:0;
+    padding: 0;
+}
+.dv table input[name="amount"]{
+    width: 45px;
+    text-align: center;
+    border: 1px solid #999999;
+    border-left: none;
+    border-right: none;
+    height: 21px;
+}
+
+.dv table input[name="plus"],.dv table input[name="minus"]{
+    border: 1px #999999 solid;
+    width: 25px;
+    text-align: center;
+    height: 21px;
+}
+
+td a{
+    text-decoration: none;
+    color:blue;
+}
+
+/*#num{*/
+    /*width: 35px;*/
+    /*text-align: center;*/
+/*}*/

@@ -1,0 +1,40 @@
+一、具体步骤
+  1)实体类 Book
+  2)实体类:车类
+     (1) 书的每一项： CartItem （书对象, 数量）
+     (2)  车中放(1)的集合： Cart（CartItem集合，计算总金额）
+
+  3)业务数据：
+   LinkedHashMap
+   https://www.cnblogs.com/coder-lzh/p/10819627.html
+    （1）查询数据放在map中；
+        (1.1).获得所有的书信息；
+        (2.1).通过Key获得一本书的信息；
+
+  4)serlvet控制器：
+      1)获得所有数据  all.action--->MyServlet-->index.jsp
+      2)根据ID购买   index.jsp-->MyServlet-->cart.jsp
+           //会话对象（存放商品）
+            HttpSession session = request.getSession();
+
+            //获得购物车
+            Cart cart = (Cart) session.getAttribute("cart");
+            //判断第一次是否车空的
+            if (cart == null) {
+                cart = new Cart(); //车对象
+                //保存车
+                session.setAttribute("cart", cart);
+            }
+
+            //放入书  --方法
+            addBook(book, cart);
+
+        2)车的操作
+           (1)清空购物车
+
+           (2)删除
+           (3)修改数量
+
+ JSP cart.jsp页面
+    1)  onblur（） 失去焦点事件
+    2)  onclick（） 单击事件

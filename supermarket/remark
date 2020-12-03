@@ -1,0 +1,33 @@
+一、搭建MVC
+  1)公共包 org.aly.sjc.util (分页，底层连接，过滤器..)
+
+  2)实体类 org.aly.sjc.entity   Userinfo
+
+  3)Dao包
+    org.aly.sjc.dao  (1) 接口  UserinfoDao (7个方法)
+    org.aly.sjc.dao.impl (2) 类   UserinfoDaoImpl (实现7个方法）
+
+  4)业务包
+    org.aly.sjc.biz  (1) 接口  UserinfoBiz (7个方法)
+    org.aly.sjc.biz.impl (2) 类   UserinfoBizImpl (实现7个方法）
+
+  5)控制器包
+    org.aly.sjc.servlet   类  UserinfoServlet
+
+  6)测试类
+    7个方法（没有问题）
+
+
+  7)复制前端HMTL页面webapp目录下
+
+
+层与层之间调用:
+  1）底层数据
+  2）业务层Biz 调用==》底层
+  3）控制层Servlet 调用==》业务层
+
+注意：
+1）实体类的字段必须与数据库表的字段名称和类型一致；
+2）实体类必须有默认的构造方法
+
+**3）如果是多张表，创建实体类（需要的字段）

@@ -1,0 +1,13 @@
+java.lang.IllegalArgumentException: Can not set double field org.hlx.entity.Book.price to java.math.BigDecimal
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeDoubleFieldAccessorImpl.set(UnsafeDoubleFieldAccessorImpl.java:110)
+
+
+解决：
+if("java.math.BigDecimal".equals(colsValue.getClass().getName())) {
+        colsValue = Long.parseLong(colsValue.toString());
+    }
+if("java.math.BigDecimal".equals(colsValue.getClass().getName())) {
+    colsValue = Double.parseDouble(colsValue.toString());
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://E:/jdbc2_20201127_HomeWork" />
+    <file type="web" url="file://E:/jdbc_SuperMarket" />
+    <file type="web" url="file://$PROJECT_DIR$/aa1" />
+    <file type="web" url="file://$PROJECT_DIR$/aa2" />
+    <file type="web" url="file://$PROJECT_DIR$/aaa" />
+    <file type="web" url="file://$PROJECT_DIR$/bankcard" />
+    <file type="web" url="file://$PROJECT_DIR$/car" />
+    <file type="web" url="file://$PROJECT_DIR$/supermarket" />
+    <file type="web" url="file://$PROJECT_DIR$/web_1123" />
+    <file type="web" url="file://$PROJECT_DIR$/web_1124" />
+    <file type="web" url="file://$PROJECT_DIR$/web_1125" />
+    <file type="web" url="file://$PROJECT_DIR$/web_1126" />
+    <file type="web" url="file://$PROJECT_DIR$/web_1127" />
+    <file type="web" url="file://$PROJECT_DIR$/web_1130" />
+    <file type="web" url="file://$PROJECT_DIR$/web_1201" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="E:/jdbc2_20201127_HomeWork/pom.xml" />
+        <option value="E:/jdbc_SuperMarket/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

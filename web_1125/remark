@@ -1,0 +1,86 @@
+一、Cookie对象
+    cookie以文件方式保存数据
+       1) 添加数据  public void addCookie(Cookie cookie)
+       2) 获取数据 public Cookie[] getCookies()
+       3) 设置有效期 public void setMaxAge(int expiry)
+       4) 用户可以禁用 cookie
+
+二、Cookie与Session区别
+   1） Cookie 是客户端，而Session是服务器端；
+   2） Cookie 生命周期-1，直到浏览器关闭，而Session生命周期是30分钟,与浏览器有关；
+   3） Cookie 只能存字符串，而Session存字符串和对象；
+   4） Cookie 不安全(客户端能查看)，而Session安全(重要)；
+
+Cookie模拟淘宝足迹的!
+
+三、Application对象:整个工程与服务器有关；
+      1)设置值：  public void setAttribute(String name, Object object)
+      2)获得值: public Object getAttribute(String name)
+
+四、pageContext，request,session,application保存数据,大小关系?
+    application>session>request>pageContext
+
+    不同点
+        request中存储的数据仅在一个请求中可用(如果不是同一个请求，获取的数据Null)
+        session中存储的数据在一个会话的有效期内可用
+        application中存储的数据在整个Web项目中可用
+
+
+总结:
+  (1) 内置对象
+        请求对象：request
+        输出对象：out
+        响应对象：response
+        应用程序对象：application
+        会话对象：session
+        页面上下文对象：pageContext
+    页面对象：page
+    配置对象：config
+    异常对象：exception
+
+  (2)转发和重定向
+
+  (3)Cookie与Session区别
+
+
+必须会！！！
+  *JavaBean 作用：
+     1） 封装数据
+     2） 封装业务逻辑
+  JSP作用：显示数据
+  Servlet作用: 控制层
+
+ MVC模式： JSP＋JavaBean＋Servlet；
+
+ Servlet做了什么？
+     1）本身不做任何业务处理
+     2）只是接收请求并决定调用哪个JavaBean去处理请求
+     3）确定用哪个页面来显示处理返回的数据
+ Servlet是什么？
+     Server+Applet，是一种服务器端的Java应用程序
+     只有当一个服务器端的程序使用了Servlet API的时候，这个服务端的程序才能称之为Servlet
+
+创建Servlet：
+  1）右键|Servlet|去掉注解,自动生成类，有2个方法（doPost(..),doGet(..))
+           //1）响应编码处理
+            response.setContentType("text/html;charset=utf-8");
+
+            //2）获得输出对象
+            PrintWriter out = response.getWriter();
+
+            out.println("HelloWorld！");
+            out.println("杭州");
+
+            //3)刷新,关闭
+            out.flush();
+            out.close();
+
+
+  2）在web.xml文件中配置, 名称和映射路径,url-pattern的路径起有意义的名字 /test, /login,/reg
+       <!--映射路径-->
+       <servlet-mapping>
+           <servlet-name>TestServlet</servlet-name>
+           <url-pattern>/test</url-pattern>
+       </servlet-mapping>
+
+

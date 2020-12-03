@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <!--全局参数-->
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
+    <!--过滤器-->
+    <filter>
+        <filter-name>ChinaFilter</filter-name>
+        <filter-class>org.hlx.ChinaFilter</filter-class>
+        <!--配置参数-->
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ChinaFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>org.hlx.TestServlet</servlet-class>
+        <!--局部参数 一个Sevlet-->
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>楼挺好</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>22</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.hlx.LoginServlet</servlet-class>
+    </servlet>
+
+    <!--映射路径-->
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

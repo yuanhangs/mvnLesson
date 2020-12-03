@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aa1" />
+        <module name="aa2" />
+        <module name="aaa" />
+        <module name="bankcard" />
+        <module name="car" />
+        <module name="jdbc2_20201127_HomeWork" />
+        <module name="jdbc_SuperMarket" />
+        <module name="reflect_annotation_1123" />
+        <module name="supermarket" />
+        <module name="web_1123" />
+        <module name="web_1124" />
+        <module name="web_1125" />
+        <module name="web_1126" />
+        <module name="web_1127" />
+        <module name="web_1130" />
+        <module name="web_1201" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

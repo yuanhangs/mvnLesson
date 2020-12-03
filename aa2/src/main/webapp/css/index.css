@@ -1,0 +1,29 @@
+body,h1,table{
+    /*margin:0;*/
+    /*padding: 0;*/
+}
+.dv{
+    width: 600px;
+    height: 350px;
+    margin: 0px auto;
+    border:2px solid royalblue;
+}
+
+.dv table{
+    width:500px;
+    margin-left: 50px;
+}
+
+tr,th,td{
+    width: 60px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#btn{
+    border:none;
+    width: 50px;
+    height: 30px;
+    background: url("image/car.png") no-repeat;
+    color: white;
+}
